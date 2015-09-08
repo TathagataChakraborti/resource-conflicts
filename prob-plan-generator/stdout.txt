@@ -1,0 +1,44 @@
+INFO     Running search.
+INFO     search input: output
+INFO     search executable: /home/tchakra2/Desktop/FAST-DOWNWARD/src/search/downward-release
+INFO     search arguments: ['--search', 'astar(lmcut())', '--internal-plan-file', 'sas_plan']
+reading input... [t=0s]
+Simplifying transitions... done!
+done reading input! [t=0s]
+building causal graph...done! [t=0s]
+packing state variables...done! [t=0s]
+Variables: 5
+Facts: 36
+Bytes per state: 4
+done initalizing global data [t=0s]
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing landmark cut heuristic...
+f = 0 [1 evaluated, 0 expanded, t=0s, 2928 KB]
+Best heuristic value: 0 [g=0, 1 evaluated, 0 expanded, t=0s, 2928 KB]
+Solution found!
+Actual search time: 0s [t=0s]
+move human room5 hall5 (0)
+move_reverse human hall5 hall4 (0)
+move_reverse human hall4 room4 (0)
+move_reverse human room4 room3 (0)
+pick_up_medkit human mk2 room3 (0)
+conduct_triage human room3 (0)
+drop_off human mk2 room3 (0)
+Plan length: 7 step(s).
+Plan cost: 0
+Initial state h value: 0.
+Expanded 30 state(s).
+Reopened 0 state(s).
+Evaluated 50 state(s).
+Evaluations: 50
+Generated 80 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Number of registered states: 50
+Search time: 0s
+Total time: 0s
+Solution found.
+Peak memory: 2928 KB

@@ -1,0 +1,7 @@
+Timeout: 1800 seconds
+Heap restriction: 2048 MB
+Command: (./pr2plan -d domain.pddl -i hyp_0_problem.pddl -o obs.dat -P) >> domain.pddl_hyp_0_problem.pddl_obs.dat_transcription.log 2>&1
+
+sh: 1: ./pr2plan: not found
+
+Failed! [Signal 32512, Time 0.000 seconds]

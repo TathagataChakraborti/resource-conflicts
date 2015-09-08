@@ -1,5 +1,5 @@
-Domain=LOGISTICS
-Problem=LOGISTICS-4-0
-Preprocessing=0.00609
-Fluents=61
-Operators=254
+Domain=ACTION
+Problem=HALLWAY1
+Preprocessing=0.00682
+Fluents=138
+Operators=132
