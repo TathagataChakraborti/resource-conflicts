@@ -28,7 +28,7 @@ def run_on_one_instance(file):
         num_kits = 2
         medkits = ['MK1','MK2','MK3','MK4','MK5']
         medkits = medkits[0:num_kits]
-        mk_groundings = ['AT_?_ROOM1','AT_?_ROOM2','AT_?_ROOM3','AT_?_ROOM4','AT_?_ROOM5','AT_?_HALL1','AT_?_HALL2','AT_?_HALL3','AT_?_HALL4','AT_?_HALL5']
+        mk_groundings = ['AT_?_ROOM1','AT_?_ROOM2','AT_?_ROOM3','AT_?_ROOM4','AT_?_ROOM5','AT_?_ROOM6','AT_?_ROOM7','AT_?_HALL1','AT_?_HALL2','AT_?_HALL3','AT_?_HALL4','AT_?_HALL5']
 
         globalVAR.resource_profiles_use = {}
         globalVAR.resource_profiles_grnd = {}
@@ -38,7 +38,6 @@ def run_on_one_instance(file):
                         tt = grnd.replace('?',mk)
                         globalVAR.resource_profiles_grnd[tt] = numpy.zeros(T+1)
                         
-                
         for idx in range(len(hyps)):
                 goal    = hyps[idx]
                 tempProblem = ''
@@ -130,7 +129,7 @@ def run_on_one_instance(file):
 
         domainFile  = 'robot/pr-domain.pddl'
         problemFile = 'robot/pr-problem.pddl'
-        time = [10, 15, 20]
+        time = [10, 13, 16]
         for tt in time:
                 try:
                         resource_plan.run_ip(domainFile, problemFile, tt)
@@ -143,14 +142,17 @@ if __name__ == '__main__' :
                 if sys.argv[1] == '1':
                         file = 'test.tar.bz2'
                         run_on_one_instance(file)
-        except:
 
-                count = 0
-                fileList = sorted(glob.glob('prob-plan-generator/test_dom1/*test*.tar.bz2*'))
-
-                for file in fileList:
+                else:
+                        count = 0
+                        fileList = sorted(glob.glob('prob-plan-generator/test_dom1/*test*.tar.bz2*'))
                         
-                        try:
-                                run_on_one_instance(file)
-                        except: 
-                                pass
+                        for file in fileList:
+                                
+                                try:
+                                        run_on_one_instance(file)
+                                except: 
+                                        pass
+
+        except:
+                pass

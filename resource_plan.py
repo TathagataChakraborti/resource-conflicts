@@ -33,13 +33,13 @@ def print_plan(m, res, T):
     actList = [aa[0] for aa in globalVAR.listOfActions_robot]
 
     #print "\n*** ROBOT PLAN  ***"
-    cost = 0.0
-    for t in range(1,T):
-        for v in solnList:
-            if v.X > 0.5 and v.VarName.split('_'+str(t))[0] in actList and v.VarName.split('_')[-1] == str(t):
-                #print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
-                if 'NOOP' not in v.VarName:
-                    cost += 1
+#    cost = 0.0
+#    for t in range(1,T):
+#        for v in solnList:
+#            if v.X > 0.5 and v.VarName.split('_'+str(t))[0] in actList and v.VarName.split('_')[-1] == str(t):
+#                print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
+#                if 'NOOP' not in v.VarName:
+#                    cost += 1
 
     #print "\n*** PROFILES ***"
 #    for r in res:
@@ -99,16 +99,13 @@ def objective_function(act, var, res, res_use, res_var, var_grnd, switchList, T)
     K = 1000
     expr = 10*quicksum(quicksum(aa[4]*act[aa[0],t] for aa in globalVAR.listOfActions_robot) for t in range(1,T))
 
-    expr += 100*quicksum(quicksum(res_use[r,t]*res_var[r,t] for r in res) for t in range(1,T))
-    #expr += 100*quicksum(quicksum(globalVAR.resource_profiles_use[r,'IN_USE'][t]*res_var[r,t] for r in res) for t in range(1,T))
+    #expr += 100*quicksum(quicksum(res_use[r,t]*res_var[r,t] for r in res) for t in range(1,T))
+    expr += 100*quicksum(quicksum(globalVAR.resource_profiles_use[r,'IN_USE'][t]*res_var[r,t] for r in res) for t in range(1,T))
 
     expr += 0.01*quicksum(quicksum(var[vv,t] for vv in switchList) for t in range(T))
     expr += -20*quicksum(quicksum(globalVAR.resource_profiles_grnd[rg][t]*var_grnd['res_'+rg,t] for rg in switchList) for t in range(T))
 
-    #expr += K*quicksum(quicksum(aa[4]*anti_act[aa[0],t] for aa in globalVAR.listOfActions_robot) for t in range(1,T))
-    #expr += K*quicksum(quicksum(aa[4]*human_act[aa[0],t] for aa in globalVAR.listOfActions_human) for t in range(1,T))
-
-    expr += 50*quicksum(quicksum((globalVAR.resource_profiles_use[r,'IN_USE'][t] - res_use[r,t]) for r in res) for t in range(T))
+    #expr += 50*quicksum(quicksum((globalVAR.resource_profiles_use[r,'IN_USE'][t] - res_use[r,t]) for r in res) for t in range(T))
 
     return expr
 
@@ -235,7 +232,7 @@ def run_ip(domainFile, problemFile, T, num_kits=2):
     for t in range(T):
         for rg in switchList:
             m.addConstr(globalVAR.resource_profiles_grnd[rg][t]*var_grnd['res_'+rg,t] + (1-var_grnd['res_'+rg,t]) >= 0.001)
-    
+            
     # set optimization objective function #
     m.setObjective(objective_function(act, var, res, res_use, res_var, var_grnd, switchList, T))
 

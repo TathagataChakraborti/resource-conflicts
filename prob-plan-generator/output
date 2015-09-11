@@ -2,13 +2,13 @@ begin_version
 3
 end_version
 begin_metric
-1
+0
 end_metric
 5
 begin_variable
 var0
 -1
-10
+12
 Atom at(human, hall1)
 Atom at(human, hall2)
 Atom at(human, hall3)
@@ -19,11 +19,13 @@ Atom at(human, room2)
 Atom at(human, room3)
 Atom at(human, room4)
 Atom at(human, room5)
+Atom at(human, room6)
+Atom at(human, room7)
 end_variable
 begin_variable
 var2
 -1
-11
+13
 Atom at(mk2, hall1)
 Atom at(mk2, hall2)
 Atom at(mk2, hall3)
@@ -34,12 +36,14 @@ Atom at(mk2, room2)
 Atom at(mk2, room3)
 Atom at(mk2, room4)
 Atom at(mk2, room5)
+Atom at(mk2, room6)
+Atom at(mk2, room7)
 Atom has(human, mk2)
 end_variable
 begin_variable
 var1
 -1
-11
+13
 Atom at(mk1, hall1)
 Atom at(mk1, hall2)
 Atom at(mk1, hall3)
@@ -50,25 +54,27 @@ Atom at(mk1, room2)
 Atom at(mk1, room3)
 Atom at(mk1, room4)
 Atom at(mk1, room5)
+Atom at(mk1, room6)
+Atom at(mk1, room7)
 Atom has(human, mk1)
 end_variable
 begin_variable
-var33
+var39
 -1
 2
 Atom has_medkit(human)
 NegatedAtom has_medkit(human)
 end_variable
 begin_variable
-var10
+var3
 -1
 2
-Atom conducted_triage(human, room3)
-NegatedAtom conducted_triage(human, room3)
+Atom conducted_triage(human, hall1)
+NegatedAtom conducted_triage(human, hall1)
 end_variable
 0
 begin_state
-9
+11
 7
 6
 1
@@ -79,515 +85,615 @@ begin_goal
 3 1
 4 0
 end_goal
-61
+73
 begin_operator
-conduct_triage human room3
+conduct_triage human hall1
 2
-0 7
+0 0
 3 0
 1
 0 4 -1 0
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 hall1
 1
 0 0
 2
-0 2 10 0
+0 2 12 0
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 hall2
 1
 0 1
 2
-0 2 10 1
+0 2 12 1
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 hall3
 1
 0 2
 2
-0 2 10 2
+0 2 12 2
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 hall4
 1
 0 3
 2
-0 2 10 3
+0 2 12 3
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 hall5
 1
 0 4
 2
-0 2 10 4
+0 2 12 4
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 room1
 1
 0 5
 2
-0 2 10 5
+0 2 12 5
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 room2
 1
 0 6
 2
-0 2 10 6
+0 2 12 6
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 room3
 1
 0 7
 2
-0 2 10 7
+0 2 12 7
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 room4
 1
 0 8
 2
-0 2 10 8
+0 2 12 8
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk1 room5
 1
 0 9
 2
-0 2 10 9
+0 2 12 9
 0 3 -1 1
-0
+1
+end_operator
+begin_operator
+drop_off human mk1 room6
+1
+0 10
+2
+0 2 12 10
+0 3 -1 1
+1
+end_operator
+begin_operator
+drop_off human mk1 room7
+1
+0 11
+2
+0 2 12 11
+0 3 -1 1
+1
 end_operator
 begin_operator
 drop_off human mk2 hall1
 1
 0 0
 2
-0 1 10 0
+0 1 12 0
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 hall2
 1
 0 1
 2
-0 1 10 1
+0 1 12 1
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 hall3
 1
 0 2
 2
-0 1 10 2
+0 1 12 2
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 hall4
 1
 0 3
 2
-0 1 10 3
+0 1 12 3
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 hall5
 1
 0 4
 2
-0 1 10 4
+0 1 12 4
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 room1
 1
 0 5
 2
-0 1 10 5
+0 1 12 5
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 room2
 1
 0 6
 2
-0 1 10 6
+0 1 12 6
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 room3
 1
 0 7
 2
-0 1 10 7
+0 1 12 7
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 room4
 1
 0 8
 2
-0 1 10 8
+0 1 12 8
 0 3 -1 1
-0
+1
 end_operator
 begin_operator
 drop_off human mk2 room5
 1
 0 9
 2
-0 1 10 9
+0 1 12 9
 0 3 -1 1
-0
+1
+end_operator
+begin_operator
+drop_off human mk2 room6
+1
+0 10
+2
+0 1 12 10
+0 3 -1 1
+1
+end_operator
+begin_operator
+drop_off human mk2 room7
+1
+0 11
+2
+0 1 12 11
+0 3 -1 1
+1
 end_operator
 begin_operator
 move human hall1 hall2
 0
 1
 0 0 0 1
-0
+1
 end_operator
 begin_operator
 move human hall2 hall3
 0
 1
 0 0 1 2
-0
+1
 end_operator
 begin_operator
 move human hall3 hall4
 0
 1
 0 0 2 3
-0
+1
 end_operator
 begin_operator
 move human hall4 hall5
 0
 1
 0 0 3 4
-0
+1
 end_operator
 begin_operator
 move human room1 hall1
 0
 1
 0 0 5 0
-0
+1
 end_operator
 begin_operator
 move human room2 hall2
 0
 1
 0 0 6 1
-0
+1
 end_operator
 begin_operator
 move human room3 room4
 0
 1
 0 0 7 8
-0
+1
 end_operator
 begin_operator
 move human room4 hall4
 0
 1
 0 0 8 3
-0
-end_operator
-begin_operator
-move human room5 hall1
-0
 1
-0 0 9 0
-0
 end_operator
 begin_operator
 move human room5 hall5
 0
 1
 0 0 9 4
+1
+end_operator
+begin_operator
+move human room6 hall1
 0
+1
+0 0 10 0
+1
+end_operator
+begin_operator
+move human room7 hall5
+0
+1
+0 0 11 4
+1
+end_operator
+begin_operator
+move human room7 room6
+0
+1
+0 0 11 10
+1
 end_operator
 begin_operator
 move_reverse human hall1 room1
 0
 1
 0 0 0 5
-0
+1
 end_operator
 begin_operator
-move_reverse human hall1 room5
+move_reverse human hall1 room6
 0
 1
-0 0 0 9
-0
+0 0 0 10
+1
 end_operator
 begin_operator
 move_reverse human hall2 hall1
 0
 1
 0 0 1 0
-0
+1
 end_operator
 begin_operator
 move_reverse human hall2 room2
 0
 1
 0 0 1 6
-0
+1
 end_operator
 begin_operator
 move_reverse human hall3 hall2
 0
 1
 0 0 2 1
-0
+1
 end_operator
 begin_operator
 move_reverse human hall4 hall3
 0
 1
 0 0 3 2
-0
+1
 end_operator
 begin_operator
 move_reverse human hall4 room4
 0
 1
 0 0 3 8
-0
+1
 end_operator
 begin_operator
 move_reverse human hall5 hall4
 0
 1
 0 0 4 3
-0
+1
 end_operator
 begin_operator
 move_reverse human hall5 room5
 0
 1
 0 0 4 9
+1
+end_operator
+begin_operator
+move_reverse human hall5 room7
 0
+1
+0 0 4 11
+1
 end_operator
 begin_operator
 move_reverse human room4 room3
 0
 1
 0 0 8 7
+1
+end_operator
+begin_operator
+move_reverse human room6 room7
 0
+1
+0 0 10 11
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 hall1
 1
 0 0
 2
-0 2 0 10
+0 2 0 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 hall2
 1
 0 1
 2
-0 2 1 10
+0 2 1 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 hall3
 1
 0 2
 2
-0 2 2 10
+0 2 2 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 hall4
 1
 0 3
 2
-0 2 3 10
+0 2 3 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 hall5
 1
 0 4
 2
-0 2 4 10
+0 2 4 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 room1
 1
 0 5
 2
-0 2 5 10
+0 2 5 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 room2
 1
 0 6
 2
-0 2 6 10
+0 2 6 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 room3
 1
 0 7
 2
-0 2 7 10
+0 2 7 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 room4
 1
 0 8
 2
-0 2 8 10
+0 2 8 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk1 room5
 1
 0 9
 2
-0 2 9 10
+0 2 9 12
 0 3 -1 0
-0
+1
+end_operator
+begin_operator
+pick_up_medkit human mk1 room6
+1
+0 10
+2
+0 2 10 12
+0 3 -1 0
+1
+end_operator
+begin_operator
+pick_up_medkit human mk1 room7
+1
+0 11
+2
+0 2 11 12
+0 3 -1 0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 hall1
 1
 0 0
 2
-0 1 0 10
+0 1 0 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 hall2
 1
 0 1
 2
-0 1 1 10
+0 1 1 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 hall3
 1
 0 2
 2
-0 1 2 10
+0 1 2 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 hall4
 1
 0 3
 2
-0 1 3 10
+0 1 3 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 hall5
 1
 0 4
 2
-0 1 4 10
+0 1 4 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 room1
 1
 0 5
 2
-0 1 5 10
+0 1 5 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 room2
 1
 0 6
 2
-0 1 6 10
+0 1 6 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 room3
 1
 0 7
 2
-0 1 7 10
+0 1 7 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 room4
 1
 0 8
 2
-0 1 8 10
+0 1 8 12
 0 3 -1 0
-0
+1
 end_operator
 begin_operator
 pick_up_medkit human mk2 room5
 1
 0 9
 2
-0 1 9 10
+0 1 9 12
 0 3 -1 0
-0
+1
+end_operator
+begin_operator
+pick_up_medkit human mk2 room6
+1
+0 10
+2
+0 1 10 12
+0 3 -1 0
+1
+end_operator
+begin_operator
+pick_up_medkit human mk2 room7
+1
+0 11
+2
+0 1 11 12
+0 3 -1 0
+1
 end_operator
 0
 begin_SG
@@ -595,11 +701,13 @@ switch 0
 check 0
 switch 2
 check 3
-21
-31
-32
+25
+37
+38
 check 1
-41
+49
+check 0
+check 0
 check 0
 check 0
 check 0
@@ -614,76 +722,11 @@ check 1
 switch 1
 check 0
 check 1
-51
+61
 check 0
 check 0
 check 0
 check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-11
-check 0
-switch 2
-check 3
-22
-33
-34
-check 0
-check 1
-42
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-2
-switch 1
-check 0
-check 0
-check 1
-52
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-12
-check 0
-switch 2
-check 2
-23
-35
-check 0
-check 0
-check 1
-43
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-3
-switch 1
-check 0
-check 0
-check 0
-check 1
-53
 check 0
 check 0
 check 0
@@ -693,169 +736,6 @@ check 0
 check 0
 check 1
 13
-check 0
-switch 2
-check 3
-24
-36
-37
-check 0
-check 0
-check 0
-check 1
-44
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-4
-switch 1
-check 0
-check 0
-check 0
-check 0
-check 1
-54
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-14
-check 0
-switch 2
-check 2
-38
-39
-check 0
-check 0
-check 0
-check 0
-check 1
-45
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-5
-switch 1
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-55
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-15
-check 0
-switch 2
-check 1
-25
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-46
-check 0
-check 0
-check 0
-check 0
-check 1
-6
-switch 1
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-56
-check 0
-check 0
-check 0
-check 0
-check 1
-16
-check 0
-switch 2
-check 1
-26
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-47
-check 0
-check 0
-check 0
-check 1
-7
-switch 1
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-57
-check 0
-check 0
-check 0
-check 1
-17
-check 0
-switch 2
-check 1
-27
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-48
-check 0
-check 0
-check 1
-8
-switch 1
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 0
-check 1
-58
-check 0
-check 0
-check 1
-18
 switch 3
 check 0
 check 1
@@ -863,9 +743,15 @@ check 1
 check 0
 check 0
 switch 2
-check 2
-28
+check 3
+26
+39
 40
+check 0
+check 1
+50
+check 0
+check 0
 check 0
 check 0
 check 0
@@ -875,7 +761,262 @@ check 0
 check 0
 check 0
 check 1
-49
+2
+switch 1
+check 0
+check 0
+check 1
+62
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+14
+check 0
+switch 2
+check 2
+27
+41
+check 0
+check 0
+check 1
+51
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+3
+switch 1
+check 0
+check 0
+check 0
+check 1
+63
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+15
+check 0
+switch 2
+check 3
+28
+42
+43
+check 0
+check 0
+check 0
+check 1
+52
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+4
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 1
+64
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+16
+check 0
+switch 2
+check 3
+44
+45
+46
+check 0
+check 0
+check 0
+check 0
+check 1
+53
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+5
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+65
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+17
+check 0
+switch 2
+check 1
+29
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+54
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+6
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+66
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+18
+check 0
+switch 2
+check 1
+30
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+55
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+7
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+67
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+19
+check 0
+switch 2
+check 1
+31
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+56
+check 0
+check 0
+check 0
+check 0
+check 1
+8
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+68
+check 0
+check 0
+check 0
+check 0
+check 1
+20
+check 0
+switch 2
+check 2
+32
+47
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+57
+check 0
+check 0
 check 0
 check 1
 9
@@ -890,15 +1031,16 @@ check 0
 check 0
 check 0
 check 1
-59
+69
+check 0
+check 0
 check 0
 check 1
-19
+21
 check 0
 switch 2
-check 2
-29
-30
+check 1
+33
 check 0
 check 0
 check 0
@@ -909,7 +1051,9 @@ check 0
 check 0
 check 0
 check 1
-50
+58
+check 0
+check 0
 check 1
 10
 switch 1
@@ -924,229 +1068,347 @@ check 0
 check 0
 check 0
 check 1
+70
+check 0
+check 0
+check 1
+22
+check 0
+switch 2
+check 2
+34
+48
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+59
+check 0
+check 1
+11
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+71
+check 0
+check 1
+23
+check 0
+switch 2
+check 2
+35
+36
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
 60
 check 1
-20
+12
+switch 1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 1
+72
+check 1
+24
 check 0
 check 0
 end_SG
 begin_DTG
 3
 1
-21
-0
-5
-31
-0
-9
-32
-0
-3
-0
-33
-0
-2
-22
-0
-6
-34
-0
-2
-1
-35
-0
-3
-23
-0
-3
-2
-36
-0
-4
-24
-0
-8
-37
-0
-2
-3
-38
-0
-9
-39
-0
-1
-0
 25
 0
-1
-1
-26
+5
+37
 0
-1
-8
-27
+10
+38
+0
+3
+0
+39
 0
 2
-3
-28
+26
 0
-7
+6
 40
 0
 2
+1
+41
+0
+3
+27
+0
+3
+2
+42
+0
+4
+28
+0
+8
+43
+0
+3
+3
+44
+0
+9
+45
+0
+11
+46
+0
+1
 0
 29
 0
-4
+1
+1
 30
 0
+1
+8
+31
+0
+2
+3
+32
+0
+7
+47
+0
+1
+4
+33
+0
+2
+0
+34
+0
+11
+48
+0
+2
+4
+35
+0
+10
+36
+0
 end_DTG
 begin_DTG
 1
-10
-51
-1
-0 0
-1
-10
-52
-1
-0 1
-1
-10
-53
-1
-0 2
-1
-10
-54
-1
-0 3
-1
-10
-55
-1
-0 4
-1
-10
-56
-1
-0 5
-1
-10
-57
-1
-0 6
-1
-10
-58
-1
-0 7
-1
-10
-59
-1
-0 8
-1
-10
-60
-1
-0 9
-10
-0
-11
+12
+61
 1
 0 0
 1
 12
+62
 1
 0 1
-2
-13
+1
+12
+63
 1
 0 2
-3
-14
+1
+12
+64
 1
 0 3
-4
-15
+1
+12
+65
 1
 0 4
-5
-16
+1
+12
+66
 1
 0 5
-6
-17
+1
+12
+67
 1
 0 6
-7
-18
+1
+12
+68
 1
 0 7
-8
-19
+1
+12
+69
 1
 0 8
-9
-20
+1
+12
+70
 1
 0 9
-end_DTG
-begin_DTG
 1
-10
-41
+12
+71
+1
+0 10
+1
+12
+72
+1
+0 11
+12
+0
+13
 1
 0 0
 1
-10
-42
+14
 1
 0 1
-1
-10
-43
+2
+15
 1
 0 2
-1
-10
-44
+3
+16
 1
 0 3
-1
-10
-45
+4
+17
 1
 0 4
-1
-10
-46
+5
+18
 1
 0 5
-1
-10
-47
+6
+19
 1
 0 6
-1
-10
-48
+7
+20
 1
 0 7
+8
+21
 1
+0 8
+9
+22
+1
+0 9
 10
+23
+1
+0 10
+11
+24
+1
+0 11
+end_DTG
+begin_DTG
+1
+12
 49
 1
-0 8
+0 0
 1
-10
+12
 50
 1
+0 1
+1
+12
+51
+1
+0 2
+1
+12
+52
+1
+0 3
+1
+12
+53
+1
+0 4
+1
+12
+54
+1
+0 5
+1
+12
+55
+1
+0 6
+1
+12
+56
+1
+0 7
+1
+12
+57
+1
+0 8
+1
+12
+58
+1
 0 9
-10
+1
+12
+59
+1
+0 10
+1
+12
+60
+1
+0 11
+12
 0
 1
 1
@@ -1187,207 +1449,255 @@ begin_DTG
 10
 1
 0 9
+10
+11
+1
+0 10
+11
+12
+1
+0 11
 end_DTG
 begin_DTG
-20
-1
-11
-2
-0 0
-1 10
-1
-20
-2
-0 9
-1 10
-1
-19
-2
-0 8
-1 10
-1
-18
-2
-0 7
-1 10
-1
-17
-2
-0 6
-1 10
-1
-16
-2
-0 5
-1 10
-1
-15
-2
-0 4
-1 10
-1
-14
-2
-0 3
-1 10
+24
 1
 13
 2
-0 2
-1 10
+0 0
+1 12
 1
-12
+24
+2
+0 11
+1 12
+1
+23
+2
+0 10
+1 12
+1
+22
+2
+0 9
+1 12
+1
+21
+2
+0 8
+1 12
+1
+20
+2
+0 7
+1 12
+1
+19
+2
+0 6
+1 12
+1
+18
+2
+0 5
+1 12
+1
+17
+2
+0 4
+1 12
+1
+16
+2
+0 3
+1 12
+1
+15
+2
+0 2
+1 12
+1
+14
 2
 0 1
-1 10
+1 12
 1
 1
 2
 0 0
-2 10
+2 12
+1
+12
+2
+0 11
+2 12
+1
+11
+2
+0 10
+2 12
 1
 10
 2
 0 9
-2 10
+2 12
 1
 9
 2
 0 8
-2 10
+2 12
 1
 8
 2
 0 7
-2 10
+2 12
 1
 7
 2
 0 6
-2 10
+2 12
 1
 6
 2
 0 5
-2 10
+2 12
 1
 5
 2
 0 4
-2 10
+2 12
 1
 4
 2
 0 3
-2 10
+2 12
 1
 3
 2
 0 2
-2 10
+2 12
 1
 2
 2
 0 1
-2 10
-20
+2 12
+24
 0
-51
+61
 2
 0 0
 1 0
 0
-60
+72
+2
+0 11
+1 11
+0
+71
+2
+0 10
+1 10
+0
+70
 2
 0 9
 1 9
 0
-59
+69
 2
 0 8
 1 8
 0
-58
+68
 2
 0 7
 1 7
 0
-57
+67
 2
 0 6
 1 6
 0
-56
+66
 2
 0 5
 1 5
 0
-55
+65
 2
 0 4
 1 4
 0
-54
+64
 2
 0 3
 1 3
 0
-53
+63
 2
 0 2
 1 2
 0
-52
+62
 2
 0 1
 1 1
 0
-41
+49
 2
 0 0
 2 0
 0
-50
+60
+2
+0 11
+2 11
+0
+59
+2
+0 10
+2 10
+0
+58
 2
 0 9
 2 9
 0
-49
+57
 2
 0 8
 2 8
 0
-48
+56
 2
 0 7
 2 7
 0
-47
+55
 2
 0 6
 2 6
 0
-46
+54
 2
 0 5
 2 5
 0
-45
+53
 2
 0 4
 2 4
 0
-44
+52
 2
 0 3
 2 3
 0
-43
+51
 2
 0 2
 2 2
 0
-42
+50
 2
 0 1
 2 1
@@ -1398,19 +1708,19 @@ begin_DTG
 0
 0
 2
-0 7
+0 0
 3 0
 end_DTG
 begin_CG
 4
-2 20
-1 20
+2 24
+1 24
 4 1
-3 40
+3 48
 1
-3 20
+3 24
 1
-3 20
+3 24
 1
 4 1
 0
