@@ -1,1 +1,5 @@
 (move human room7 room6)
+(move human room6 hall1)
+(move human hall1 hall2)
+(move_reverse human hall2 room2)
+(pick_up_medkit human mk1 room2)

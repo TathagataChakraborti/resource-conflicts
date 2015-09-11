@@ -33,13 +33,16 @@ def print_plan(m, res, T):
     actList = [aa[0] for aa in globalVAR.listOfActions_robot]
 
     #print "\n*** ROBOT PLAN  ***"
-#    cost = 0.0
-#    for t in range(1,T):
-#        for v in solnList:
-#            if v.X > 0.5 and v.VarName.split('_'+str(t))[0] in actList and v.VarName.split('_')[-1] == str(t):
-#                print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
-#                if 'NOOP' not in v.VarName:
-#                    cost += 1
+    cost = 0.0
+    plan = ''
+    for t in range(1,T):
+        for v in solnList:
+            if v.X > 0.5 and v.VarName.split('_'+str(t))[0] in actList and v.VarName.split('_')[-1] == str(t):
+                #print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
+                plan += v.VarName.split('_'+str(t))[0] + '\n'
+                if 'NOOP' not in v.VarName:
+                    cost += 1
+    plan = plan.strip()
 
     #print "\n*** PROFILES ***"
 #    for r in res:
@@ -77,7 +80,7 @@ def print_plan(m, res, T):
 			count += 1
 
     prob = prob/count
-    return [cost, conflict, prob]
+    return [cost, conflict, prob, plan]
 
 
 def build_resource_action_relations(res):
@@ -247,11 +250,12 @@ def run_ip(domainFile, problemFile, T, num_kits=2):
     if status == GRB.OPTIMAL:
         ret = print_plan(m, res, T)
         print 'Time: ', (end-start), 'Cost: ', ret[0], 'Conflict: ', ret[1], 'Success', ret[2], 'T = ', T  
+        return ret[3]
         #print '\nTime Taken:', (end - start), ' sec'
         #print('Obj: %g' % m.ObjVal)
     else:
         print 'Optimization was stopped with status %d' %status
-    
+        return None
 #    soln = m.getVars()
 #    for v in soln:
 #        if 'res_' in v.varName and v.X > 0.5:

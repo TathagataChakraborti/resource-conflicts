@@ -2,10 +2,10 @@
 import sys, os, ast, copy, numpy, glob
 import globalVAR, readFiles, resource_plan
 
-def run_on_one_instance(file):
+def run_on_one_instance(fileName):
 
-        print file
-	human_file = file
+        print fileName
+	human_file = fileName
 
         cmd = 'tar -jxvf ' + human_file + ' -C ./ > stdout.txt'
         os.system(cmd)
@@ -132,7 +132,9 @@ def run_on_one_instance(file):
         time = [10, 13, 16]
         for tt in time:
                 try:
-                        resource_plan.run_ip(domainFile, problemFile, tt)
+                        plan = resource_plan.run_ip(domainFile, problemFile, tt)
+                        with open('plans/'+human_file.split('/')[2].split('.')[0]+'_'+str(tt)+'_plan.dat','w') as plan_file:
+                                plan_file.write(plan)
                 except:
                         print 'Optimization was stopped with status 666'
 
@@ -140,19 +142,16 @@ if __name__ == '__main__' :
 
         try:
                 if sys.argv[1] == '1':
-                        file = 'test.tar.bz2'
+                        file = 'prob-plan-generator/test_dom1/test_013_2_1.tar.bz2'
                         run_on_one_instance(file)
 
-                else:
-                        count = 0
-                        fileList = sorted(glob.glob('prob-plan-generator/test_dom1/*test*.tar.bz2*'))
-                        
-                        for file in fileList:
-                                
-                                try:
-                                        run_on_one_instance(file)
-                                except: 
-                                        pass
-
         except:
-                pass
+                count = 0
+                fileList = sorted(glob.glob('prob-plan-generator/test_dom1/*test*.tar.bz2*'))
+                
+                for fileName in fileList:
+                                
+                        try:
+                                run_on_one_instance(fileName)
+                        except: 
+                                pass

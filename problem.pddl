@@ -24,7 +24,7 @@
 )
 
 (:goal (and  
-(conducted_triage human room5)
+(conducted_triage human hall5)
 (not (has_medkit human))
 
 ))
