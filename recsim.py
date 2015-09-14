@@ -25,7 +25,7 @@ def run_on_one_instance(fileName):
         curr = [float(i)/sum(curr) for i in curr]
 
         T = 25
-        num_kits = 4
+        num_kits = 2
         medkits = ['MK1','MK2','MK3','MK4','MK5']
         medkits = medkits[0:num_kits]
         mk_groundings = ['AT_?_ROOM1','AT_?_ROOM2','AT_?_ROOM3','AT_?_ROOM4','AT_?_ROOM5','AT_?_ROOM6','AT_?_ROOM7','AT_?_HALL1','AT_?_HALL2','AT_?_HALL3','AT_?_HALL4','AT_?_HALL5']
@@ -158,5 +158,5 @@ if __name__ == '__main__' :
                         except: 
                                 pass
                                 
-                        if count == 10:
+                        if count == 50:
                                 break

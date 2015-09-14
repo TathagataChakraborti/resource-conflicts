@@ -7,44 +7,42 @@ Simplifying transitions... done!
 done reading input! [t=0s]
 building causal graph...done! [t=0s]
 packing state variables...done! [t=0s]
-Variables: 7
-Facts: 68
+Variables: 5
+Facts: 42
 Bytes per state: 4
 done initalizing global data [t=0s]
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 Initializing landmark cut heuristic...
-f = 7 [1 evaluated, 0 expanded, t=0s, 3064 KB]
-Best heuristic value: 7 [g=0, 1 evaluated, 0 expanded, t=0s, 3064 KB]
-Best heuristic value: 6 [g=1, 3 evaluated, 1 expanded, t=0s, 3064 KB]
-Best heuristic value: 5 [g=2, 4 evaluated, 2 expanded, t=0s, 3064 KB]
-f = 8 [6 evaluated, 3 expanded, t=0s, 3064 KB]
-f = 9 [10 evaluated, 6 expanded, t=0s, 3064 KB]
-f = 10 [13 evaluated, 10 expanded, t=0s, 3064 KB]
-Best heuristic value: 4 [g=6, 14 evaluated, 11 expanded, t=0s, 3064 KB]
-Best heuristic value: 3 [g=7, 16 evaluated, 12 expanded, t=0s, 3064 KB]
-Best heuristic value: 2 [g=8, 18 evaluated, 13 expanded, t=0s, 3064 KB]
-Best heuristic value: 1 [g=9, 22 evaluated, 14 expanded, t=0s, 3064 KB]
-Best heuristic value: 0 [g=10, 24 evaluated, 15 expanded, t=0s, 3064 KB]
+f = 6 [1 evaluated, 0 expanded, t=0s, 2928 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0s, 2928 KB]
+Best heuristic value: 5 [g=1, 2 evaluated, 1 expanded, t=0s, 2928 KB]
+Best heuristic value: 4 [g=2, 4 evaluated, 2 expanded, t=0s, 2928 KB]
+f = 7 [7 evaluated, 3 expanded, t=0s, 2928 KB]
+f = 8 [8 evaluated, 4 expanded, t=0s, 2928 KB]
+f = 9 [13 evaluated, 10 expanded, t=0s, 2928 KB]
+Best heuristic value: 3 [g=6, 14 evaluated, 11 expanded, t=0s, 2928 KB]
+Best heuristic value: 2 [g=7, 15 evaluated, 12 expanded, t=0s, 2928 KB]
+Best heuristic value: 1 [g=8, 20 evaluated, 13 expanded, t=0s, 3060 KB]
+Best heuristic value: 0 [g=9, 24 evaluated, 14 expanded, t=0s, 3060 KB]
 Solution found!
 Actual search time: 0s [t=0s]
-move human room7 room6 (1)
-move human room6 hall1 (1)
-move human hall1 hall2 (1)
-move_reverse human hall2 room2 (1)
-pick_up_medkit human mk1 room2 (1)
-move human room2 hall2 (1)
-move_reverse human hall2 hall1 (1)
-move_reverse human hall1 room1 (1)
-conduct_triage human room1 (1)
-drop_off human mk1 room1 (1)
-Plan length: 10 step(s).
-Plan cost: 10
-Initial state h value: 7.
-Expanded 16 state(s).
+move human room7 hall5 (1)
+move_reverse human hall5 hall4 (1)
+move_reverse human hall4 room4 (1)
+move_reverse human room4 room3 (1)
+pick_up_medkit human mk2 room3 (1)
+move human room3 room4 (1)
+move human room4 hall4 (1)
+conduct_triage human hall4 (1)
+drop_off human mk2 hall4 (1)
+Plan length: 9 step(s).
+Plan cost: 9
+Initial state h value: 6.
+Expanded 15 state(s).
 Reopened 0 state(s).
 Evaluated 24 state(s).
 Evaluations: 24
-Generated 39 state(s).
+Generated 38 state(s).
 Dead ends: 0 state(s).
 Expanded until last jump: 10 state(s).
 Reopened until last jump: 0 state(s).
@@ -54,4 +52,4 @@ Number of registered states: 24
 Search time: 0s
 Total time: 0s
 Solution found.
-Peak memory: 3064 KB
+Peak memory: 3060 KB

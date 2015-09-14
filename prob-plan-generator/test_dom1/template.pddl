@@ -2,15 +2,13 @@
 (:objects
 	human - agent
 	room1 room2 room3 room4 room5 room6 room7 hall1 hall2 hall3 hall4 hall5 - location
-	mk1 mk2 mk3 mk4 - medkit
+	mk1 mk2 - medkit
 )
  
 (:init
 	(at human room7)                                                             
 	(at mk1 room2)
 	(at mk2 room3)
-	(at mk3 room4)
-	(at mk4 room5)
 	(connected room1 hall1)
 	(connected room2 hall2)
 	(connected room3 room4)

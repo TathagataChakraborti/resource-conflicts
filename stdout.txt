@@ -1,46 +1,55 @@
 INFO     Running search.
 INFO     search input: output
 INFO     search executable: /home/tchakra2/Desktop/FAST-DOWNWARD/src/search/downward-release
-INFO     search arguments: ['--search', 'astar(lmcut())', '--internal-plan-file', 'plan_1.dat']
+INFO     search arguments: ['--search', 'astar(lmcut())', '--internal-plan-file', 'plan_2.dat']
 reading input... [t=0s]
 Simplifying transitions... done!
 done reading input! [t=0s]
 building causal graph...done! [t=0s]
 packing state variables...done! [t=0s]
-Variables: 68
-Facts: 136
-Bytes per state: 12
+Variables: 12
+Facts: 56
+Bytes per state: 4
 done initalizing global data [t=0s]
 Conducting best first search with reopening closed nodes, (real) bound = 2147483647
 Initializing landmark cut heuristic...
-f = 4 [1 evaluated, 0 expanded, t=0s, 3060 KB]
-Best heuristic value: 4 [g=0, 1 evaluated, 0 expanded, t=0s, 3060 KB]
-Best heuristic value: 3 [g=1, 2 evaluated, 1 expanded, t=0s, 3060 KB]
-Best heuristic value: 2 [g=2, 5 evaluated, 2 expanded, t=0s, 3060 KB]
-f = 5 [7 evaluated, 3 expanded, t=0s, 3060 KB]
-Best heuristic value: 1 [g=4, 9 evaluated, 4 expanded, t=0s, 3060 KB]
-Best heuristic value: 0 [g=5, 11 evaluated, 5 expanded, t=0s, 3060 KB]
+f = 6 [1 evaluated, 0 expanded, t=0s, 3060 KB]
+Best heuristic value: 6 [g=0, 1 evaluated, 0 expanded, t=0s, 3060 KB]
+f = 8 [3 evaluated, 1 expanded, t=0s, 3060 KB]
+Best heuristic value: 5 [g=3, 9 evaluated, 4 expanded, t=0s, 3060 KB]
+f = 9 [12 evaluated, 5 expanded, t=0s, 3060 KB]
+Best heuristic value: 4 [g=5, 13 evaluated, 6 expanded, t=0s, 3060 KB]
+f = 10 [18 evaluated, 9 expanded, t=0s, 3060 KB]
+Best heuristic value: 3 [g=7, 21 evaluated, 12 expanded, t=0s, 3060 KB]
+Best heuristic value: 2 [g=8, 24 evaluated, 13 expanded, t=0s, 3060 KB]
+Best heuristic value: 1 [g=9, 29 evaluated, 14 expanded, t=0s, 3060 KB]
+Best heuristic value: 0 [g=10, 33 evaluated, 15 expanded, t=0s, 3060 KB]
 Solution found!
 Actual search time: 0s [t=0s]
-explain_obs_move_human_room7_hall5_1  (1)
-move_reverse_human_hall5_room5  (1)
-pick_up_medkit_human_mk4_room5  (1)
-conduct_triage_human_room5  (1)
-drop_off_human_mk4_room5  (1)
-Plan length: 5 step(s).
-Plan cost: 5
-Initial state h value: 4.
-Expanded 6 state(s).
+explain_obs_move_human_room7_room6_1  (1)
+explain_obs_move_human_room6_hall1_1  (1)
+explain_obs_move_human_hall1_hall2_1  (1)
+move_reverse_human_hall2_room2  (1)
+pick_up_medkit_human_mk1_room2  (1)
+move_human_room2_hall2  (1)
+move_human_hall2_hall3  (1)
+move_human_hall3_hall4  (1)
+conduct_triage_human_hall4  (1)
+drop_off_human_mk1_hall4  (1)
+Plan length: 10 step(s).
+Plan cost: 10
+Initial state h value: 6.
+Expanded 16 state(s).
 Reopened 0 state(s).
-Evaluated 11 state(s).
-Evaluations: 11
-Generated 13 state(s).
+Evaluated 33 state(s).
+Evaluations: 33
+Generated 43 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 3 state(s).
+Expanded until last jump: 9 state(s).
 Reopened until last jump: 0 state(s).
-Evaluated until last jump: 7 state(s).
-Generated until last jump: 7 state(s).
-Number of registered states: 11
+Evaluated until last jump: 18 state(s).
+Generated until last jump: 22 state(s).
+Number of registered states: 33
 Search time: 0s
 Total time: 0s
 Solution found.

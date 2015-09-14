@@ -1,0 +1,102 @@
+prob-plan-generator/test_dom1/test_013_2_1.tar.bz2
+Time:  0.949028015137 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_013_2_3.tar.bz2
+Time:  1.46649312973 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_013_2_5.tar.bz2
+Time:  0.981990814209 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_014_2_1.tar.bz2
+Time:  1.12117099762 Cost:  9.0 Conflict:  0.139902 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_014_2_3.tar.bz2
+Time:  0.895796060562 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_014_2_5.tar.bz2
+Time:  0.894801139832 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_015_2_1.tar.bz2
+Time:  0.979492902756 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_015_2_3.tar.bz2
+Time:  0.982636928558 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_015_2_5.tar.bz2
+Time:  0.827090978622 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_016_2_1.tar.bz2
+Time:  0.808972835541 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_016_2_3.tar.bz2
+Time:  0.84543800354 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_016_2_5.tar.bz2
+Time:  0.811076164246 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_017_2_1.tar.bz2
+Time:  0.934541940689 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_017_2_3.tar.bz2
+Time:  0.930609941483 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_017_2_5.tar.bz2
+Time:  0.717386007309 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_018_2_1.tar.bz2
+Time:  0.81782412529 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_018_2_3.tar.bz2
+Time:  1.08890199661 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_018_2_5.tar.bz2
+Time:  0.856621026993 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_019_2_1.tar.bz2
+Time:  0.918143033981 Cost:  9.0 Conflict:  0.322996 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_019_2_3.tar.bz2
+Time:  1.17419910431 Cost:  9.0 Conflict:  0.3861108 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_019_2_5.tar.bz2
+Time:  0.853222131729 Cost:  9.0 Conflict:  0.609853 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_020_2_1.tar.bz2
+Time:  1.82380199432 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_020_2_3.tar.bz2
+Time:  1.761936903 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_020_2_5.tar.bz2
+Time:  1.17610502243 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_021_2_1.tar.bz2
+Time:  0.942291975021 Cost:  9.0 Conflict:  0.139902 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_021_2_3.tar.bz2
+Time:  0.866217136383 Cost:  9.0 Conflict:  0.077004 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_021_2_5.tar.bz2
+Time:  0.881852865219 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_022_2_1.tar.bz2
+Time:  0.970541954041 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_022_2_3.tar.bz2
+Time:  0.958036899567 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_022_2_5.tar.bz2
+Time:  0.992749929428 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_023_2_1.tar.bz2
+Time:  0.863247156143 Cost:  9.0 Conflict:  0.645992 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_023_2_3.tar.bz2
+Time:  0.757791996002 Cost:  9.0 Conflict:  0.7306928 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_023_2_5.tar.bz2
+Time:  0.773019075394 Cost:  9.0 Conflict:  0.8069446 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_024_2_1.tar.bz2
+Time:  1.54805588722 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_024_2_3.tar.bz2
+Time:  1.52771520615 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_024_2_5.tar.bz2
+Time:  1.20039606094 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_025_3_1.tar.bz2
+Time:  0.920444011688 Cost:  9.0 Conflict:  0.2708536 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_025_3_3.tar.bz2
+Time:  0.824712991714 Cost:  9.0 Conflict:  0.3537244 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_025_3_5.tar.bz2
+Time:  0.885946035385 Cost:  9.0 Conflict:  0.4282216 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_026_3_1.tar.bz2
+Time:  1.46253800392 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_026_3_3.tar.bz2
+Time:  1.48556399345 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_026_3_5.tar.bz2
+Time:  1.05509591103 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_027_3_1.tar.bz2
+Time:  1.94709992409 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_027_3_3.tar.bz2
+Time:  1.2333688736 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_027_3_5.tar.bz2
+Time:  0.95224404335 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_028_3_1.tar.bz2
+Time:  1.30271291733 Cost:  9.0 Conflict:  0.0847768 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_028_3_3.tar.bz2
+Warning: adding constraints with small (< 1e-13) coefficients, ignored
+Time:  1.6639521122 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_028_3_5.tar.bz2
+Time:  1.15598011017 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_029_3_1.tar.bz2
+Time:  0.992720842361 Cost:  9.0 Conflict:  0.259125 Success 1.0 T =  10
+prob-plan-generator/test_dom1/test_029_3_3.tar.bz2
+Warning: adding constraints with small (< 1e-13) coefficients, ignored
+Time:  1.68165183067 Cost:  9.0 Conflict:  0.0 Success 1.0 T =  10
