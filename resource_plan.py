@@ -231,6 +231,10 @@ def run_ip(domainFile, problemFile, T, num_kits=2):
     
     #for t in range(1,T):
         #m.addConstr(quicksum(var[vv,t] for vv in switchList) == 1)
+
+    #simulation
+    for ttime in range(2):
+        m.addConstr(act['NOOP',ttime]==1)
     
     for t in range(T):
         for rg in switchList:
