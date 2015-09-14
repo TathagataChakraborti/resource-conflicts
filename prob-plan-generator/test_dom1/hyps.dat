@@ -1,6 +1,6 @@
 (conducted_triage human room1),(not (has_medkit human))
 (conducted_triage human room2),(not (has_medkit human))
-(conducted_triage human room3),(not (has_medkit human))
+(conducted_triage human room4),(not (has_medkit human))
 (conducted_triage human room5),(not (has_medkit human))
 (conducted_triage human room6),(not (has_medkit human))
 (conducted_triage human room7),(not (has_medkit human))

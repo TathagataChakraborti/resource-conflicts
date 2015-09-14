@@ -1,5 +1,5 @@
 Domain=ACTION
 Problem=HALLWAY1
-Preprocessing=0.00755
-Fluents=89
-Operators=86
+Preprocessing=0.00479
+Fluents=139
+Operators=134

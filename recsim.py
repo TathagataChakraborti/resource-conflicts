@@ -25,7 +25,7 @@ def run_on_one_instance(fileName):
         curr = [float(i)/sum(curr) for i in curr]
 
         T = 25
-        num_kits = 2
+        num_kits = 4
         medkits = ['MK1','MK2','MK3','MK4','MK5']
         medkits = medkits[0:num_kits]
         mk_groundings = ['AT_?_ROOM1','AT_?_ROOM2','AT_?_ROOM3','AT_?_ROOM4','AT_?_ROOM5','AT_?_ROOM6','AT_?_ROOM7','AT_?_HALL1','AT_?_HALL2','AT_?_HALL3','AT_?_HALL4','AT_?_HALL5']
@@ -129,10 +129,11 @@ def run_on_one_instance(fileName):
 
         domainFile  = 'robot/pr-domain.pddl'
         problemFile = 'robot/pr-problem.pddl'
-        time = [10, 13, 16]
+
+        time = [10]
         for tt in time:
                 try:
-                        plan = resource_plan.run_ip(domainFile, problemFile, tt)
+                        plan = resource_plan.run_ip(domainFile, problemFile, tt, num_kits)
                         with open('plans/'+human_file.split('/')[2].split('.')[0]+'_'+str(tt)+'_plan.dat','w') as plan_file:
                                 plan_file.write(plan)
                 except:
@@ -150,8 +151,12 @@ if __name__ == '__main__' :
                 fileList = sorted(glob.glob('prob-plan-generator/test_dom1/*test*.tar.bz2*'))
                 
                 for fileName in fileList:
-                                
+                        
+                        count += 1
                         try:
                                 run_on_one_instance(fileName)
                         except: 
                                 pass
+                                
+                        if count == 10:
+                                break
