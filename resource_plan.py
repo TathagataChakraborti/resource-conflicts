@@ -38,7 +38,7 @@ def print_plan(m, res, T):
     for t in range(1,T):
         for v in solnList:
             if v.X > 0.5 and v.VarName.split('_'+str(t))[0] in actList and v.VarName.split('_')[-1] == str(t):
-                #print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
+                print('%g - %s' % (t, v.VarName.split('_'+str(t))[0]))
                 plan += v.VarName.split('_'+str(t))[0] + '\n'
                 if 'NOOP' not in v.VarName:
                     cost += 1
@@ -255,8 +255,8 @@ def run_ip(domainFile, problemFile, T, num_kits=2):
         ret = print_plan(m, res, T)
         print 'Time: ', (end-start), 'Cost: ', ret[0], 'Conflict: ', ret[1], 'Success', ret[2], 'T = ', T  
         return ret[3]
-        #print '\nTime Taken:', (end - start), ' sec'
-        #print('Obj: %g' % m.ObjVal)
+        print '\nTime Taken:', (end - start), ' sec'
+        print('Obj: %g' % m.ObjVal)
     else:
         print 'Optimization was stopped with status %d' %status
         return None
@@ -264,3 +264,4 @@ def run_ip(domainFile, problemFile, T, num_kits=2):
 #    for v in soln:
 #        if 'res_' in v.varName and v.X > 0.5:
 #            print v.varName, v.X
+

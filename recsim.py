@@ -130,7 +130,7 @@ def run_on_one_instance(fileName):
         domainFile  = 'robot/pr-domain.pddl'
         problemFile = 'robot/pr-problem.pddl'
 
-        time = [10]
+        time = [10, 13, 16]
         for tt in time:
                 try:
                         plan = resource_plan.run_ip(domainFile, problemFile, tt, num_kits)

@@ -90,17 +90,13 @@
 		( AT_MK2_ROOM3 )
 		( AT_MK1_ROOM2 )
 		( AT_HUMAN_ROOM7 )
-		( EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-		( EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 )
-		( EXPLAINED_MOVE_HUMAN_HALL1_HALL2_1 )
-		( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-		( NOT_EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 )
-		( NOT_EXPLAINED_MOVE_HUMAN_HALL1_HALL2_1 )
+		( EXPLAINED_MOVE_HUMAN_ROOM7_HALL5_1 )
+		( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_HALL5_1 )
 		( EXPLAINED_FULL_OBS_SEQUENCE )
 		( NOT_EXPLAINED_FULL_OBS_SEQUENCE )
 	) 
 	(:functions (total-cost))
-	(:action EXPLAIN_OBS_MOVE_HUMAN_ROOM7_ROOM6_1
+	(:action EXPLAIN_OBS_MOVE_HUMAN_ROOM7_HALL5_1
 		:parameters ()
 		:precondition
 		(and
@@ -109,89 +105,12 @@
 		:effect
 		(and
 			(increase (total-cost) 1)
-			( AT_HUMAN_ROOM6 )
-			 ( EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-			(not ( AT_HUMAN_ROOM7 ))
-			 (not ( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 ))
-		)
-	)
-	(:action EXPLAIN_OBS_MOVE_HUMAN_ROOM6_HALL1_1
-		:parameters ()
-		:precondition
-		(and
-			( AT_HUMAN_ROOM6 )
-			( EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-		)
-		:effect
-		(and
-			(increase (total-cost) 1)
-			( AT_HUMAN_HALL1 )
-			 ( EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 )
-			(not ( AT_HUMAN_ROOM6 ))
-			 (not ( NOT_EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 ))
-		)
-	)
-	(:action MOVE_HUMAN_ROOM6_HALL1
-		:parameters ()
-		:precondition
-		(and
-			( AT_HUMAN_ROOM6 )
-			( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-			( NOT_EXPLAINED_FULL_OBS_SEQUENCE )
-		)
-		:effect
-		(and
-			(increase (total-cost) 1)
-			( AT_HUMAN_HALL1 )
-			(not ( AT_HUMAN_ROOM6 ))
-		)
-	)
-	(:action EXPLAIN_OBS_MOVE_HUMAN_HALL1_HALL2_1
-		:parameters ()
-		:precondition
-		(and
-			( AT_HUMAN_HALL1 )
-			( EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 )
-		)
-		:effect
-		(and
-			(increase (total-cost) 1)
-			( AT_HUMAN_HALL2 )
-			 ( EXPLAINED_MOVE_HUMAN_HALL1_HALL2_1 )
+			( AT_HUMAN_HALL5 )
+			 ( EXPLAINED_MOVE_HUMAN_ROOM7_HALL5_1 )
 			 ( EXPLAINED_FULL_OBS_SEQUENCE )
-			(not ( AT_HUMAN_HALL1 ))
-			 (not ( NOT_EXPLAINED_MOVE_HUMAN_HALL1_HALL2_1 ))
+			(not ( AT_HUMAN_ROOM7 ))
+			 (not ( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_HALL5_1 ))
 			 (not ( NOT_EXPLAINED_FULL_OBS_SEQUENCE ))
-		)
-	)
-	(:action MOVE_HUMAN_HALL1_HALL2
-		:parameters ()
-		:precondition
-		(and
-			( AT_HUMAN_HALL1 )
-			( NOT_EXPLAINED_MOVE_HUMAN_ROOM7_ROOM6_1 )
-			( NOT_EXPLAINED_FULL_OBS_SEQUENCE )
-		)
-		:effect
-		(and
-			(increase (total-cost) 1)
-			( AT_HUMAN_HALL2 )
-			(not ( AT_HUMAN_HALL1 ))
-		)
-	)
-	(:action MOVE_HUMAN_HALL1_HALL2
-		:parameters ()
-		:precondition
-		(and
-			( AT_HUMAN_HALL1 )
-			( NOT_EXPLAINED_MOVE_HUMAN_ROOM6_HALL1_1 )
-			( NOT_EXPLAINED_FULL_OBS_SEQUENCE )
-		)
-		:effect
-		(and
-			(increase (total-cost) 1)
-			( AT_HUMAN_HALL2 )
-			(not ( AT_HUMAN_HALL1 ))
 		)
 	)
 	(:action PICK_UP_MEDKIT_HUMAN_MK2_HALL5
@@ -631,6 +550,19 @@
 			(increase (total-cost) 1)
 			( AT_HUMAN_HALL5 )
 			(not ( AT_HUMAN_ROOM5 ))
+		)
+	)
+	(:action MOVE_HUMAN_HALL1_HALL2
+		:parameters ()
+		:precondition
+		(and
+			( AT_HUMAN_HALL1 )
+		)
+		:effect
+		(and
+			(increase (total-cost) 1)
+			( AT_HUMAN_HALL2 )
+			(not ( AT_HUMAN_HALL1 ))
 		)
 	)
 	(:action MOVE_HUMAN_HALL2_HALL3
@@ -1450,7 +1382,20 @@
 			(not ( AT_HUMAN_HALL5 ))
 		)
 	)
-	(:action MOVE_HUMAN_ROOM7_HALL5
+	(:action MOVE_HUMAN_ROOM6_HALL1
+		:parameters ()
+		:precondition
+		(and
+			( AT_HUMAN_ROOM6 )
+		)
+		:effect
+		(and
+			(increase (total-cost) 1)
+			( AT_HUMAN_HALL1 )
+			(not ( AT_HUMAN_ROOM6 ))
+		)
+	)
+	(:action MOVE_HUMAN_ROOM7_ROOM6
 		:parameters ()
 		:precondition
 		(and
@@ -1459,7 +1404,7 @@
 		:effect
 		(and
 			(increase (total-cost) 1)
-			( AT_HUMAN_HALL5 )
+			( AT_HUMAN_ROOM6 )
 			(not ( AT_HUMAN_ROOM7 ))
 		)
 	)

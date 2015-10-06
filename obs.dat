@@ -1,3 +1,1 @@
-(move human room7 room6)
-(move human room6 hall1)
-(move human hall1 hall2)
+(move human room7 hall5)
